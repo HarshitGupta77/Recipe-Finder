@@ -17,11 +17,11 @@ searchInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
         searchMeals();
     }
-})
+});
 mealsContainer.addEventListener("click", mealClick);
 backBtn.addEventListener("click", () => {
     mealDetails.classList.add("hidden");
-})
+});
 
 async function searchMeals() {
     errorContainer.classList.add("hidden");
