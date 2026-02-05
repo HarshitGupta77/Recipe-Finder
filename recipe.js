@@ -64,7 +64,7 @@ async function searchMeals() {
             const fullMeals = lookupResponse.map(r => r.meals[0]);
             meals = [...meals, ...fullMeals];
         }
-        console.log(meals);
+        // console.log(meals);
 
         const uniqueMeals = Array.from(
             new Map(meals.map(meal => [meal.idMeal, meal])).values()
@@ -125,7 +125,7 @@ async function mealClick(e) {
         const response = await fetch(`${LOOKUP_URL}${mealID}`);
         const data = await response.json();
 
-        console.log(data);
+        // console.log(data);
         if (data.meals && data.meals[0]) {
             const meal = data.meals[0];
             const ingredients = [];
