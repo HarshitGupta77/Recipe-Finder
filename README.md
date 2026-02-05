@@ -19,7 +19,7 @@ It merges results from multiple endpoints, removes duplicates, and dynamically l
 
 ---
 
-## ❓ How it Works 
+## ⁉️ How it Works 
 
 - User enters a search term
 - The app fetches meals from TheMealDB using both
